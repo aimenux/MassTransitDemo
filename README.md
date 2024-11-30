@@ -5,7 +5,7 @@
 Using masstransit to consume and publish messages from/to various brokers
 ```
 
-> In this repo, i m using the [masstransit](https://masstransit.io/) in order to consume and publish messages from/to various brokers.
+> In this repo, i m using [masstransit](https://masstransit.io/) in order to consume and publish messages from/to various brokers.
 >
 > :one: `Example01` : use worker template
 >
