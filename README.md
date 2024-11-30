@@ -5,7 +5,7 @@
 Using masstransit to consume and publish broker messages
 ```
 
-> In this repo, i m using the [masstransit](https://learn.microsoft.com/en-us/aspnet/core/performance/rate-limit) in order to consume and publish messages from/to various brokers (rabbitmq, servicebus, etc).
+> In this repo, i m using the [masstransit](https://masstransit.io/) in order to consume and publish messages from/to various brokers.
 >
 > :one: `Example01` : use worker template
 >
