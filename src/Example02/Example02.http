@@ -1,0 +1,6 @@
+@Example02_HostAddress = https://localhost:7246
+
+POST {{Example02_HostAddress}}/publish/
+Accept: application/json
+
+###

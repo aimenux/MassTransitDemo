@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk.Worker">
+
+    <PropertyGroup>
+        <UserSecretsId>Example01-UserSecrets</UserSecretsId>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="MassTransit" />
+        <PackageReference Include="MassTransit.Azure.ServiceBus.Core" />
+        <PackageReference Include="MassTransit.RabbitMQ" />
+        <PackageReference Include="Microsoft.Extensions.Hosting" />
+    </ItemGroup>
+
+</Project>

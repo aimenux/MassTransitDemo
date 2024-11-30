@@ -1,0 +1,44 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{63A02BE4-1F3F-4039-9A0A-48AC1DD24D7D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Example01", "src\Example01\Example01.csproj", "{E88DFB19-C92D-4143-A310-CD7338C8A854}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "files", "files", "{02A0D6C2-E501-475A-9F6C-0D9A32C244EF}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+		Directory.Build.props = Directory.Build.props
+		Directory.Packages.props = Directory.Packages.props
+		global.json = global.json
+		.gitignore = .gitignore
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Example02", "src\Example02\Example02.csproj", "{E8FF0893-0A85-4DE2-80E1-4E6EAD741DAA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E88DFB19-C92D-4143-A310-CD7338C8A854}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E88DFB19-C92D-4143-A310-CD7338C8A854}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E88DFB19-C92D-4143-A310-CD7338C8A854}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E88DFB19-C92D-4143-A310-CD7338C8A854}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E8FF0893-0A85-4DE2-80E1-4E6EAD741DAA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E8FF0893-0A85-4DE2-80E1-4E6EAD741DAA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E8FF0893-0A85-4DE2-80E1-4E6EAD741DAA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E8FF0893-0A85-4DE2-80E1-4E6EAD741DAA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{E88DFB19-C92D-4143-A310-CD7338C8A854} = {63A02BE4-1F3F-4039-9A0A-48AC1DD24D7D}
+		{E8FF0893-0A85-4DE2-80E1-4E6EAD741DAA} = {63A02BE4-1F3F-4039-9A0A-48AC1DD24D7D}
+	EndGlobalSection
+EndGlobal

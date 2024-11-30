@@ -1,0 +1,18 @@
+<Project>
+    
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Deterministic>true</Deterministic>
+        <RunCodeAnalysis>true</RunCodeAnalysis>
+        <EnableNETAnalyzers>true</EnableNETAnalyzers>
+        <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+        <EnforceCodeStyleInBuild>true</EnforceCodeStyleInBuild>
+        <MSBuildTreatWarningsAsErrors>true</MSBuildTreatWarningsAsErrors>
+        <CodeAnalysisTreatWarningsAsErrors>true</CodeAnalysisTreatWarningsAsErrors>
+        <AnalysisModeSecurity>All</AnalysisModeSecurity>
+        <AnalysisMode>All</AnalysisMode>
+    </PropertyGroup>
+    
+</Project>
