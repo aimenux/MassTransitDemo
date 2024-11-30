@@ -5,14 +5,16 @@
         <Nullable>enable</Nullable>
         <ImplicitUsings>enable</ImplicitUsings>
         <Deterministic>true</Deterministic>
+        <AnalysisMode>All</AnalysisMode>
+        <AnalysisModeSecurity>All</AnalysisModeSecurity>
         <RunCodeAnalysis>true</RunCodeAnalysis>
         <EnableNETAnalyzers>true</EnableNETAnalyzers>
         <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
         <EnforceCodeStyleInBuild>true</EnforceCodeStyleInBuild>
         <MSBuildTreatWarningsAsErrors>true</MSBuildTreatWarningsAsErrors>
         <CodeAnalysisTreatWarningsAsErrors>true</CodeAnalysisTreatWarningsAsErrors>
-        <AnalysisModeSecurity>All</AnalysisModeSecurity>
-        <AnalysisMode>All</AnalysisMode>
+        <GenerateDocumentationFile>true</GenerateDocumentationFile>
+        <NoWarn>$(NoWarn);CS1591;</NoWarn>
     </PropertyGroup>
     
 </Project>
