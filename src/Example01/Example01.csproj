@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk.Worker">
 
     <PropertyGroup>
-        <UserSecretsId>Example01-UserSecrets</UserSecretsId>
+        <UserSecretsId>MassTransitDemo-Example01-UserSecrets</UserSecretsId>
     </PropertyGroup>
 
     <ItemGroup>

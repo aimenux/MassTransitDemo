@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk.Web">
 
     <PropertyGroup>
-        <UserSecretsId>Example02-UserSecrets</UserSecretsId>
+        <UserSecretsId>MassTransitDemo-Example02-UserSecrets</UserSecretsId>
     </PropertyGroup>
 
     <ItemGroup>
