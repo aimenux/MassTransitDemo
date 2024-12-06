@@ -15,7 +15,7 @@ public static class DependencyInjection
         builder.AddMessaging();
         return builder;
     }
-    
+
     private static void AddSettings(this WebApplicationBuilder builder)
     {
         builder.Services.Configure<Settings>(builder.Configuration.GetSection(Settings.SectionName));
