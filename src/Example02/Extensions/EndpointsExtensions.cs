@@ -7,11 +7,12 @@ public static class EndpointsExtensions
 {
     public static IApplicationBuilder MapEndpoints(this WebApplication app)
     {
-        app.MapPost("/publish", async (IBus bus, ILogger<Program> logger, CancellationToken cancellationToken) =>
+        app.MapPost("/api/publish", async (IBus bus, ILogger<Program> logger, CancellationToken cancellationToken) =>
         {
             var message = new Message();
             await bus.Publish(message, cancellationToken);
             logger.LogPublishedMessage(message.Id);
+            return message;
         });
 
         return app;

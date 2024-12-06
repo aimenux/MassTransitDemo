@@ -10,15 +10,25 @@ public static class DependencyInjection
 {
     public static WebApplicationBuilder AddServices(this WebApplicationBuilder builder)
     {
-        builder.Services.AddOpenApi(builder.Environment);
+        builder.AddOpenApi();
+        builder.AddSettings();
+        builder.AddMessaging();
+        return builder;
+    }
+    
+    private static void AddSettings(this WebApplicationBuilder builder)
+    {
         builder.Services.Configure<Settings>(builder.Configuration.GetSection(Settings.SectionName));
         builder.Services.AddSingleton<IValidateOptions<Settings>, SettingsValidator>();
+    }
+
+    private static void AddMessaging(this WebApplicationBuilder builder)
+    {
         builder.Services.AddMassTransit(x =>
         {
             x.SetKebabCaseEndpointNameFormatter();
             x.AddConsumers(Assembly.GetEntryAssembly());
             x.UsingBrokerType(builder.Configuration);
         });
-        return builder;
     }
 }

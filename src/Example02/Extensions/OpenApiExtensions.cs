@@ -2,15 +2,15 @@
 
 public static class OpenApiExtensions
 {
-    public static void AddOpenApi(this IServiceCollection services, IWebHostEnvironment environment)
+    public static void AddOpenApi(this WebApplicationBuilder builder)
     {
-        if (environment.IsProduction())
+        if (builder.Environment.IsProduction())
         {
             return;
         }
 
-        services.AddEndpointsApiExplorer();
-        services.AddSwaggerGen();
+        builder.Services.AddEndpointsApiExplorer();
+        builder.Services.AddSwaggerGen();
     }
 
     public static void UseOpenApi(this WebApplication app)

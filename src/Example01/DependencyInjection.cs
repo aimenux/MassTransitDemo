@@ -11,8 +11,19 @@ public static class DependencyInjection
 {
     public static HostApplicationBuilder AddServices(this HostApplicationBuilder builder)
     {
+        builder.AddSettings();
+        builder.AddMessaging();
+        return builder;
+    }
+
+    private static void AddSettings(this HostApplicationBuilder builder)
+    {
         builder.Services.Configure<Settings>(builder.Configuration.GetSection(Settings.SectionName));
         builder.Services.AddSingleton<IValidateOptions<Settings>, SettingsValidator>();
+    }
+
+    private static void AddMessaging(this HostApplicationBuilder builder)
+    {
         builder.Services.AddHostedService<MessageProducer>();
         builder.Services.AddMassTransit(x =>
         {
@@ -20,6 +31,5 @@ public static class DependencyInjection
             x.AddConsumers(Assembly.GetEntryAssembly());
             x.UsingBrokerType(builder.Configuration);
         });
-        return builder;
     }
 }
